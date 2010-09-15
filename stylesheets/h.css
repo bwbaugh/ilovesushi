@@ -1,0 +1,38 @@
+/* @override 
+	http://localhost:3000/stylesheets/h.css
+*/
+
+.scrolling-content {
+	width:3200px;
+ 	position: absolute;
+}
+
+#content_lunch
+{ 
+ 	left:0;top:0;
+}
+
+#content_dinner
+{ 
+ 	left:800px;top:0;
+}
+#content_sushi
+{ 
+ 	left:1600px;top:0;
+}
+#content_drinks
+{ 
+ 	left:2400px;top:0;
+}
+#content_tatami
+{ 
+ 	left:3200px;top:0;
+}
+.box-content {
+	/*position:absolute;*/
+	width:798px;
+	height: 600px;
+	background-color: #fefefe;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+}

@@ -1,0 +1,287 @@
+body {
+	color: #000;
+}
+div#demo-container {
+	font-size: .8em;
+}
+table {
+	position: relative;
+	width: 98%;
+	margin: 10px auto;
+	padding: 0;
+	border:none;
+}
+table td {
+	border:none;
+}
+table#sake_table {
+	width:700px;
+	margin: 0 auto;
+	border: 1px solid #fff;
+}
+table#sake_table td {
+	border: none;
+}
+table#beer_table {
+	width:700px;
+	margin: 0 auto;
+	border: 1px solid #fff;
+}
+table#beer_table td {
+	border: none;
+	padding: 5px;
+}
+table#sushi_roll_table, table#veg_roll_table, table#sushi_sashimi_table {
+	width:700px;
+	margin: 0 auto;
+	border: 1px solid #fff;
+}
+table#sushi_roll_table td, table#veg_roll_table td, table#sushi_sashimi_table td {
+	border: none;
+	padding: 5px;
+}
+.menu_item_name, .sushi_subject {
+	font-weight: bold;
+	font-size: .9em;
+	width: 33%;
+}
+.menu_item_quote {
+	font-size: .8em;
+	font-style: italic;
+}
+.menu_item_price, .sushi_price {
+	font-size: .9em;
+	font-weight: bold;
+	text-align: left;
+	width: 33%;
+}
+.menu_item_description, .sushi_description {
+	font-size: .7em;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-left: 30px;
+	padding-right: 70px;
+	width: 33%;
+}
+.menu_item_small_header {
+	font-size: .7em;
+}
+div#drink_menu {
+	position:relative;
+	width:700px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+div#drink_menu ul {
+}
+div#drink_menu li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	list-style-image: none;
+	list-style-type: none;
+}
+div#drink_menu ul li a {
+	font-size: .9em;
+	font-weight: bold;
+}
+div#drink_menu ul li a.refreshments {
+}
+div#drink_menu ul li a.price {
+	position: absolute;
+	right: 11px;
+	font-size: .9em;
+}
+div#drink_menu ul li ul li {
+	font-size: .9em;
+}
+div#dinner_menu {
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+div#dinner_menu ul li {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.dinner {
+	font-size: 16px;
+	font-weight: 500;
+	font-variant: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	list-style-type: none;
+	color: #213147;
+}
+#sushi_sashimi_table tr th {
+	text-align:left;
+}
+#sushi_sashimi_table td.sushi_price {
+	text-align:left;
+}
+.description {
+	font-size:.8em;
+}
+.bold {
+	font-weight:800;
+	font-size:1.05em;
+}
+div#sushi_menu {
+	margin: 0 auto;
+}
+div#sushi_menu div#sushi_left_column {
+	position:absolute;
+	left:0;
+	width: 350px;
+}
+div#sushi_menu div#sushi_right_column {
+	position:absolute;
+	left:355px;
+	width: 400px;
+}
+div#sushi_menu table {
+	border: 1px solid #ccc;
+	margin-bottom:2px;
+	border-collapse: none;
+	border-spacing: none;
+}
+div#sushi_menu table td {
+	padding: 2px;
+	border:1px solid #e2e2e2;
+}
+div#sushi_menu table tr {
+	border:1px solid #e2e2e2;
+}
+div#sushi_menu table tr.even {
+	background: #F3F3F3
+}
+div#dinner_menu {
+	position:relative;
+	width:98%;
+	margin:0 auto;
+}
+div#dinner_menu div#dinner_left_column {
+	position:relative;
+	float: left;
+	width:49%;
+	margin:0 2px;
+}
+div#dinner_menu div#dinner_right_column {
+	float:left;
+	left:355px;
+	width: 49%;
+	margin:0 2px;
+}
+br.reset {
+	float:none;
+	clear:both;
+}
+div#dinner_menu div#dinner_lower_column {
+	position:relative;
+	float:none;
+	clear:both;
+}
+div#dinner_menu table {
+	border: 1px solid #ccc;
+	margin-bottom:2px;
+	border-collapse: none;
+	border-spacing: none;
+}
+div#dinner_menu table td {
+	padding: 2px;
+	border:1px solid #e2e2e2;
+}
+div#dinner_menu table tr {
+	border:1px solid #e2e2e2;
+}
+div#dinner_menu table tr.even {
+	background: #F3F3F3
+}
+div#lunch_menu {
+	position:relative;
+	width:98%;
+	margin:0 auto;
+}
+div#lunch_menu div#lunch_left_column {
+	position:relative;
+	float: left;
+	width:49%;
+	margin:0 2px;
+}
+div#lunch_menu div#lunch_right_column {
+	float:left;
+	left:355px;
+	width: 49%;
+	margin:0 2px;
+}
+br.reset {
+	float:none;
+	clear:both;
+}
+div#lunch_menu div#lunch_lower_column {
+	position:relative;
+	float:none;
+	clear:both;
+}
+div#lunch_menu table {
+	border: 1px solid #ccc;
+	margin-bottom:2px;
+	border-collapse: none;
+	border-spacing: none;
+}
+div#lunch_menu table td {
+	padding: 2px;
+	border:1px solid #e2e2e2;
+}
+div#lunch_menu table tr {
+	border:1px solid #e2e2e2;
+}
+div#lunch_menu table tr.even {
+	background: #F3F3F3
+}
+div#drink_menu {
+	position:relative;
+	width:98%;
+	margin:0 auto;
+}
+div#drink_menu div#drink_left_column {
+	position:relative;
+	float: left;
+	width:49%;
+	margin:0 2px;
+}
+div#drink_menu div#drink_right_column {
+	float:left;
+	left:355px;
+	width: 49%;
+	margin:0 2px;
+}
+br.reset {
+	float:none;
+	clear:both;
+}
+div#drink_menu div#washolu_lower_column {
+	position:relative;
+	float:none;
+	clear:both;
+}
+div#drink_menu table {
+	border: 1px solid #ccc;
+	margin-bottom:2px;
+	border-collapse: none;
+	border-spacing: none;
+}
+div#drink_menu table td {
+	padding: 2px;
+	border:1px solid #e2e2e2;
+}
+div#drink_menu table tr {
+	border:1px solid #e2e2e2;
+}
+div#drink_menu table tr.even {
+	background: #F3F3F3
+}
