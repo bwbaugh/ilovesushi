@@ -7,3 +7,6 @@ test-upload:
 .PHONY: upload
 upload:
 	$(UPLOAD_CMD)
+	$(eval $@_PRODUCTION_TAG := production-$(shell date -u '+%Y%m%dT%H%M%SZ'))
+	git tag $($@_PRODUCTION_TAG)
+	git push origin $($@_PRODUCTION_TAG)
