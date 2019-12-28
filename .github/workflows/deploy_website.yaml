@@ -1,0 +1,32 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Deploy to S3
+      uses: jakejarvis/s3-sync-action@v0.5.0
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'us-east-2'
+        SOURCE_DIR: 'public'
+    - name: Set output variables
+      id: vars
+      run: |
+        echo ::set-output name=git_tag_production::"production-$(date -u '+%Y%m%dT%H%M%SZ')"
+    - name: Push production tag
+      uses: anothrNick/github-tag-action@1.8.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        CUSTOM_TAG: ${{ steps.vars.outputs.git_tag_production }}
