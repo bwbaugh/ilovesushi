@@ -1,4 +1,4 @@
-UPLOAD_CMD := aws s3 sync --region=us-east-2 . s3://www.ilovesushidenton.com/ --delete --exclude='.git/*' --exclude='.DS_Store' --exclude='Makefile'
+UPLOAD_CMD := aws s3 sync --region=us-east-2 public/ s3://www.ilovesushidenton.com/ --delete --exclude='.DS_Store'
 
 .PHONY: test-upload
 test-upload:
