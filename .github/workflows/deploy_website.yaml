@@ -24,7 +24,9 @@ jobs:
     - name: Set output variables
       id: vars
       run: |
-        echo ::set-output name=git_tag_production::"production-$(date -u '+%Y%m%dT%H%M%SZ')"
+        PRODUCTION_TAG="production-$(date -u '+%Y%m%dT%H%M%SZ')"
+        echo "::set-output name=git_tag_production::${PRODUCTION_TAG}"
+        echo "Production tag: ${PRODUCTION_TAG}"
     - name: Push production tag
       uses: anothrNick/github-tag-action@1.8.0
       env:
